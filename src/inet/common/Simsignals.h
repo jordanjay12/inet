@@ -108,7 +108,10 @@ extern INET_API simsignal_t    // admin
     packetReceivedFromPeerSignal,
 
     packetSentSignal,
-    packetReceivedSignal;
+    packetReceivedSignal,
+
+    packetEnqueuedSignal,
+    packetDequeuedSignal;
 
 /**
  * Utility function

@@ -100,6 +100,9 @@ simsignal_t packetReceivedFromPeerSignal = cComponent::registerSignal("packetRec
 simsignal_t packetSentSignal = cComponent::registerSignal("packetSent");
 simsignal_t packetReceivedSignal = cComponent::registerSignal("packetReceived");
 
+simsignal_t packetEnqueuedSignal = cComponent::registerSignal("packetEnqueued");
+simsignal_t packetDequeuedSignal = cComponent::registerSignal("packetDequeued");
+
 void printSignalBanner(simsignal_t signalID, const cObject *obj, const cObject *details)
 {
     EV << "** Signal at T=" << simTime()
